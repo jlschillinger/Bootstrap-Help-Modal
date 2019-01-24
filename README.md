@@ -5,3 +5,5 @@ Sticky-button modal with carousel, auto-advance, custom indicators and controls,
 - [Font Awesome](https://www.fontawesome.com)
 
 Demo placeholder images from [PlaceImg](https://placeimg.com/); dummy text from [CoffeeIpsum](http://coffeeipsum.com/). 
+
+[Demo](https://jlschillinger.github.io/Bootstrap-Help-Modal/help-modal.html)
