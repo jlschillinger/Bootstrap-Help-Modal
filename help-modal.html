@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>Modal Slideshow</title>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Main-->
+  <link href="help-modal.css" rel="stylesheet" />
+</head>
+<body>
+
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-2">Bootstrap 4 Modal Carousel</h1>
+        <p class="lead">Auto-advance carousel in a modal with sticky launch button, arrow controls, slide indicators, restart and close buttons.</p>
+        <p>Created <a href="https://getbootstrap.com/">Bootstrap 4</a> and <a href="https://fontawesome.com/">Font Awesome</a> with help from <a href="https://placeimg.com/">Placeimg</a> and <a href="http://coffeeipsum.com/">Coffe Ipsum</a>. 
+        <!-- ===========================
+        // Launch Button
+        ============================= -->
+            <div class="sticky-button">
+              <button type="button" data-toggle="modal" data-target="#helpModal" class="btn btn-fill btn-warning btn-lg" title="Need Help?"><i class="far fa-question-circle"></i>&nbsp;Launch the Modal!</button>
+            </div>
+        </div>
+      </div>
+      <!-- ===========================
+      // Modal Content
+      ============================= -->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!-- // Header & Close X -->
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="helpModalTitle"><i class="fas fa-info-circle"></i>&nbsp;Here are some instructions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+            </button>
+          </div>
+          <!-- // Body -->
+          <div class="modal-body">
+            <!-- ===========================
+            // Slideshow Content
+            ============================= -->
+            <div id="helpModalSlideshow" class="carousel slide" data-ride="carousel">
+              <!-- ===========================
+              // Indicators
+              ============================= -->
+              <ol class="carousel-indicators">
+                <li data-target="#helpModalSlideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#helpModalSlideshow" data-slide-to="1"></li>
+                <li data-target="#helpModalSlideshow" data-slide-to="2"></li>
+                <li data-target="#helpModalSlideshow" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <!-- ===========================
+                // Slide 1
+                ============================= -->
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="https://placeimg.com/640/480/nature/grayscale" />
+                  <div class="carousel-caption text-center text-white">
+                    <p class="lead">White sit variety caffeine aroma sugar decaffeinated extraction. </p>
+                  </div>
+                </div>
+                <!-- ===========================
+                // Slide 2
+                ============================= -->
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://placeimg.com/640/480/arch/grayscale" />
+                  <div class="carousel-caption text-center text-white">
+                    <p class="lead">Aromatic roast black cup et milk roast pumpkin spice french press strong dark.</p>
+                  </div>
+                </div>
+                <!-- ===========================
+                // Slide 3
+                ============================= -->
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://placeimg.com/640/480/animals/grayscale" />
+                  <div class="carousel-caption text-center text-white">
+                    <p class="lead">Roast sugar crema mocha extraction espresso aged grinder.</p>
+                  </div>
+                </div>
+                <!-- ===========================
+                // Slide 4
+                ============================= -->
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://placeimg.com/640/480/tech/grayscale" />
+                  <div class="carousel-caption text-center text-white">
+                    <p class="lead">Blue mountain, id blue mountain, cappuccino, instant, fair trade crema spoon aroma spoon siphon spoon. </p>
+                  </div>
+                </div>
+              </div>
+              <!--// inner-->
+              <!-- ===========================
+              // Next & Previous Controls
+              ============================= -->
+              <a class="carousel-control-prev" href="#helpModalSlideshow" role="button" data-slide="prev">
+                <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-1x text-white" aria-hidden="true"></i>
+                  <i class="fas fa-chevron-circle-left fa-stack-1x text-success" aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#helpModalSlideshow" role="button" data-slide="next">
+                <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-1x text-white" aria-hidden="true"></i>
+                  <i class="fas fa-chevron-circle-right fa-stack-1x text-success" aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Next</span>
+
+              </a>
+            </div>
+            <!-- // carousel -->
+          </div>
+          <!--Modal Body--->
+          <!-- // Footer with Buttons -->
+          <div class="modal-footer p-4">
+            <button type="button" class="btn btn-secondary btn-lg mr-auto" data-target="#helpModalSlideshow" data-slide-to="0"><i class="fas fa-undo-alt"></i>&nbsp;Restart</button>
+            <button type="button" class="btn btn-success btn-lg ml-auto" data-dismiss="modal"><i class="fas fa-check"></i>&nbsp;Got it!</button>
+          </div>
+        </div>
+        <!--modal content-->
+      </div>
+      <!-- modal-dialog-->
+    </div>
+    <!--modal-->
+  </main><!-- /.container -->
+  <!--Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

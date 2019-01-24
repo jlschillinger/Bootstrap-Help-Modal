@@ -1,0 +1,24 @@
+/* Position the button */
+.sticky-button {
+    position:fixed; /* sticky */
+    right:15px; /* bottom right */
+    bottom:15px;
+    z-index:99; /* sits on top of everything else  */
+}
+
+/* Indicators from lines to dots */
+#helpModalSlideshow .carousel-indicators li {
+    width:15px;
+    height:15px;
+    border-radius:100%;
+}
+
+/* Transparent dots with green borders */
+#helpModalSlideshow .carousel-indicators > li {
+    background-color: rgba(255,255,255,0.0);
+    border: solid 2px rgb(122,194,154);
+}
+/* Change the indicator color to green */
+#helpModalSlideshow .carousel-indicators .active {
+    background-color: rgb(122,194,154);
+}
